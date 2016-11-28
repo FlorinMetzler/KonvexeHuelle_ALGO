@@ -43,7 +43,6 @@ void getPointsFromRandom(std::vector<Point*>* out_points, int amount, int upper_
 	for (int i = 0; i < amount; ++i) {
 		out_points->push_back(new Point(dist(mt), dist(mt)));
 	}
-	std::random_shuffle(points.begin(), points.end());
 }
 
 void getPointsForCircle(int points, double radius, Point center, std::vector<Point*>* out_points)
